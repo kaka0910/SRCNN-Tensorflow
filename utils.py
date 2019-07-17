@@ -16,11 +16,11 @@ import numpy as np
 import tensorflow as tf
 
 try:
-  xrange
+  xrange                  #xrange(),生成一个生成器，与range()不同
 except:
   xrange = range
   
-FLAGS = tf.app.flags.FLAGS
+FLAGS = tf.app.flags.FLAGS           #tf中传参数用的
 
 def read_data(path):
   """
